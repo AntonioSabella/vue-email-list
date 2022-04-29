@@ -13,7 +13,7 @@ const app = new Vue ({
     },
     methods: {},
     mounted() {
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 20; i++) { // aumentato le email generate per rendere più visibile lo "pseudo-caricamento" di v-else
             axios.get('https://flynn.boolean.careers/exercises/api/random/mail')
             .then(response => {
                 console.log(response);
